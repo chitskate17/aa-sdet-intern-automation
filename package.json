@@ -1,0 +1,23 @@
+{
+  "name": "aa-sdet-intern-automation",
+  "version": "1.0.0",
+  "description": "Playright Project to automate Automation Anywhere UI components in browser.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chitskate17/aa-sdet-intern-automation.git"
+  },
+  "keywords": [],
+  "author": "Chirag P Rao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chitskate17/aa-sdet-intern-automation/issues"
+  },
+  "homepage": "https://github.com/chitskate17/aa-sdet-intern-automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "dotenv": "^17.4.2"
+  }
+}
