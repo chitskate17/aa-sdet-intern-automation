@@ -32,7 +32,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     baseURL: 'https://community.cloud.automationanywhere.digital',
-    headless: false,
+    headless: !!process.env.CI,
     screenshot: 'on',
     video: 'on-first-retry'
   },
@@ -43,7 +43,7 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        launchOptions: { slowMo: 800 }, // ← slow motion — comment out for CI/production runs
+        launchOptions: process.env.CI ? {} : { slowMo: 800 }, //slow mo disabled for CI
       },
     },
 
